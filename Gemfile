@@ -1,0 +1,13 @@
+source 'http://rubygems.org'
+
+gem 'sinatra'
+gem 'require_all'
+gem 'rake'
+gem 'activerecord', '~> 5.2'
+gem 'sqlite3'
+gem 'shotgun'
+gem 'pry'
+gem 'sinatra-activerecord'
+gem 'sinatra-contrib'
+gem 'bycrypt', '~> 3.1.7'
+gem 'rack-flash3'
