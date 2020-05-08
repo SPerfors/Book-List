@@ -1,22 +1,22 @@
 class UsersController < ApplicationController
 
-    get '/signup' do 
+    get "/signup" do 
         if logged_in?
-            redirect '/repository'
+            redirect "/repository"
         else 
-            erb :'/users/new_user'
+            erb :"/users/new_user"
         end
     end
 
-    post '/signup' do 
+    post "/signup" do 
         user = User.new(username: params[:username], password: params[:password], email: params[:email])
 
         if user[:username].empty? || user[:password_digest] == nil || user[:email].empty?
-            redirect '/signup'
+            redirect "/signup"
         else
             user.save
             session[:user_id] = user.id 
-            redirect '/repository'
+            redirect "/repository"
         end
     end
 

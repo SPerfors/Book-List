@@ -8,6 +8,7 @@ class ApplicationController < Sinatra::Base
         set :views, 'app/views'
         enable :sessions
         set :session_secret, "secret"
+        set :database_file, 'config/database.yml'
         use Rack::Flash 
     end
 
@@ -16,7 +17,7 @@ class ApplicationController < Sinatra::Base
     end
 
     helpers do
-        
+
         def logged_in?
             !!session[:user_id]
         end
