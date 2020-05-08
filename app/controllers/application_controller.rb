@@ -11,5 +11,8 @@ class ApplicationController < Sinatra::Base
         use Rack::Flash 
     end
 
+    get '/' do 
+       erb :home    
+    end
 
 end
