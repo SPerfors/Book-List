@@ -20,5 +20,14 @@ class UsersController < ApplicationController
         end
     end
 
+    get "/login" do 
+        if logged_in?
+            redirect "/repository"
+        else 
+            erb :"/users/login"
+        end
+    end
+    
+
 
 end
