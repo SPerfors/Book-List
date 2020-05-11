@@ -63,7 +63,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (~> 5.2)
-  bcrypt
+  bcrypt (~> 3.1.7)
   pry
   rack-flash3
   rake
