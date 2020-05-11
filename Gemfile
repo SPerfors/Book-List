@@ -8,6 +8,6 @@ gem 'sqlite3'
 gem 'shotgun'
 gem 'pry'
 gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
-gem 'sinatra-contrib'
+gem 'sinatra-contrib', require: false
 gem 'bcrypt', '~> 3.1.7'
 gem 'rack-flash3'
