@@ -1,8 +1,8 @@
 class AuthorsController < ApplicationController 
 
-    get '/authors' do 
+    get "/authors" do 
         @authors = Author.all 
-        erb :'/authors/index'
+        erb :"/authors/index"
     end
     
 end
