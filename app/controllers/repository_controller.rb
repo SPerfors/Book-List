@@ -5,4 +5,10 @@ class BooksController < ApplicationController
         erb :"/repository/repository"
     end
 
+    get "/repository/new" do 
+        @user = current_user
+        erb :"/repository/new"
+    end
+
+
 end
