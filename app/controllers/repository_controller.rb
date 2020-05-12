@@ -26,7 +26,7 @@ class BooksController < ApplicationController
         #end
 
         @author.save
-        redirect "authors/#{@author.id}"
+        redirect "/authors/index"
     end
 
 
