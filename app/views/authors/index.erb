@@ -1,7 +1,11 @@
+<h1>Welcome, <%= @user.username %></h1>
+
 <h2>Collected Authors</h2>
 
-<% @authors.each do |author| %>
-    <a href='/authors/<%= author.id %>'>
-        <h3><%= author.name %></h3>
-    </a>
-<% end %>
+<ul>
+    <% Author.all.each do |author| %>
+        <li>
+            <p><%= author.name %></p>
+        </li>
+    <% end %>
+</ul>
