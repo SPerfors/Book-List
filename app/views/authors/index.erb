@@ -5,7 +5,7 @@
 <ul>
     <% Author.all.each do |author| %>
         <li>
-            <p><%= author.name %></p>
+            <p><a href=<%="/authors/#{author.id}" %>><%= author.name %></a></p>
         </li>
     <% end %>
 </ul>
