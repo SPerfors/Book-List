@@ -21,9 +21,9 @@ class BooksController < ApplicationController
             @author.books.build(title: params[:book][:title])
         end
 
-        if !params[:genre][:name].empty? 
-            @author.genres.build(name: params[:genre][:name])
-        end
+        #if !params[:genre][:name].empty? 
+            #@author.genres.build(name: params[:genre][:name])
+        #end
 
         @author.save
         redirect "authors/#{@author.id}"

@@ -25,10 +25,11 @@
     <ul>
         <% Genre.all.each do |genre| %>
             <li>
-                <input type="checkbox" name="author[genre_id][]" value="<%= genre.id %>" id="genre_<%= genre.id %>"><%= genre.name %></input>
+                <input type="checkbox" name="author[book_id][genre_id[]" value="<%= genre.id %>" id="genre_<%= genre.id %>"><%= genre.name %></input>
             </li>
         <% end %>
     </ul>
     <h3>Create New Genre: <input type="text" name="genre[name]" id="new_genre"></h3>
+    <p><input type="submit" value="Create New Entry"></p>
 </form>
 
