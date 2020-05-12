@@ -10,5 +10,13 @@ class BooksController < ApplicationController
         erb :"/repository/new"
     end
 
+    post "/repository" do 
+        @author = Author.new(params[:author])
+
+        @author.save
+        redirect "authors/#{@author.id}"
+    end
+    
+
 
 end

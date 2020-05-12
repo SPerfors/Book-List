@@ -1,1 +1,17 @@
 <h1>Welcome, <%= @user.username %>!
+
+<h2>Create New Entry Here</h2>
+
+<form method="POST" action="/repository">
+    <p>Choose existing author:</p>
+    <ul>
+        <% Author.all.each do |author| %>
+            <li>
+                <input type="checkbox" name="author[name][]" value="<%= author.id %>" id="author_<%= author.id %>"><%= author.name %></input>
+            </li>
+        <% end %>
+    </ul>
+    <h3>Create New Author: <input type="text" name="author[name]" id="new_author"></h3>
+    <p>
+</form>
+
