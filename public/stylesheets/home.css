@@ -6,6 +6,8 @@ html, body {
 body {
     background: #34ebeb;
     background-size: cover;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 h1 {
@@ -26,4 +28,11 @@ p {
     display: flex;
     margin-right: 15%;
     margin-left: 15%;
+}
+
+#button {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    text-align: center;
 }
