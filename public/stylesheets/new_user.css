@@ -40,6 +40,10 @@ input {
     outline: none;
 }
 
-input[type=text]:focus {
+input:focus {
     background-color: #ccf5ff;
+}
+
+input[type=submit] {
+    
 }
