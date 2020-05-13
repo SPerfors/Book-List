@@ -19,3 +19,11 @@ h1 {
     align-content: center;
     margin-top: 5%;
 }
+
+p {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    margin-right: 15%;
+    margin-left: 15%;
+}
