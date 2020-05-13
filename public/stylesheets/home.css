@@ -11,3 +11,10 @@ body {
 h1 {
     font-size: small;
 }
+
+#intro {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5%;
+}
