@@ -12,24 +12,8 @@
         <% end %>
     </ul>
     <h3>Create New Author: <input type="text" name="author[name]" id="new_author"></h3>
-    <p>Choose existing book:</p>
-    <ul>
-        <% Book.all.each do |book| %>
-            <li>
-                <input type="checkbox" name="author[book_id][]" value="<%= book.id %>" id="book_<%= book.id %>"><%= book.title %></input>
-            </li>
-        <% end %>
-    </ul>
     <h3>Create New Book Title: <input type="text" name="book[title]" id="new_book"></h3>
-    <p>Choose existing Genre:</p>
-    <ul>
-        <% Genre.all.each do |genre| %>
-            <li>
-                <input type="checkbox" name="author[book_id][genre_id[]" value="<%= genre.id %>" id="genre_<%= genre.id %>"><%= genre.name %></input>
-            </li>
-        <% end %>
-    </ul>
-    <h3>Create New Genre: <input type="text" name="genre[name]" id="new_genre"></h3>
+
     <p><input type="submit" value="Create New Entry"></p>
 </form>
 
