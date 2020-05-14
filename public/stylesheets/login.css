@@ -15,3 +15,11 @@ html::after {
     position: absolute;
     z-index: -1;  
 }
+
+body {
+    display: flex;
+}
+
+input[type=text], input[type=password] {
+    
+}
