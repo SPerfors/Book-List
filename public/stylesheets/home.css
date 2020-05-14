@@ -46,3 +46,8 @@ p {
 .button_link:hover {
     color: #ff0000; 
 }
+
+footer {
+    font-size: 0.5em;
+    margin-bottom: 0px;
+}
