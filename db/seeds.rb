@@ -5,7 +5,17 @@
 
     user.save 
     
-    5.times do 
-        Fabricate(:book)
+    3.times do 
+        author = Author.new
+        author.name = Faker::Book.author 
+        author.save
+
+        5.times do 
+            book = Book.new
+            book.title = Faker::Book.title
+            book.save 
+            book.author = author 
+            book.user = user 
+        end
     end
 end
