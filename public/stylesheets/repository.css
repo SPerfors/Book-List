@@ -18,38 +18,12 @@ html::after {
     z-index: -1;  
 }
 
-body {
-    display: inline-block;
-    margin-top: 10px;
-    align-content: center;
-    
+.row {
+    display: flex;
 }
 
-input[type=text], input[type=password] {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 8px;
-    border-radius: 4px;
-    outline: none;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ccf5ff;
-}
-
-input[type=submit] {
-    width: 40%;
-    padding: 8px 20px;
-    margin: 8px;
-    border-radius: 4px;
-    outline:none;
-    cursor: pointer;
-    font-size: 14px;
-    transition-duration: 0.4s;
-}
-
-input[type=submit]:hover {
-    background-color: #ccf5ff;
+.column {
+    flex: 50%;
 }
 
 footer {
