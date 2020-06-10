@@ -18,6 +18,13 @@ html::after {
     z-index: -1;  
 }
 
+body {
+    display: inline-block;
+    margin-top: 10px;
+    align-content: center;
+    
+}
+
 .row {
     display: flex;
 }
