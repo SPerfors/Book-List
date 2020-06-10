@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Depository</title>
-    <link rel="stylesheet" href="/stylesheets/login.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/repository.css" type="text/css">
 </head>
 <body>
 
@@ -12,24 +12,28 @@
 <br>
 
 <h3>Your collection!</h3>
-
-<p>Collected Authors</p>
-<ul>
-    <% Author.all.each do |author| %>
-        <li>
-            <p><a href=<%="/authors/#{author.id}" %>><%= author.name %></a></p>
-        </li>
-    <% end %>
-</ul>
-
-<p>Collected Books</p>
-<ul>
-    <% Book.all.each do |book| %>
-        <li>
-            <p><a href=<%="/books/#{book.id}" %>><%= book.title %></a></p>
-        </li>
-    <% end %>
-</ul>
+<div class="row">
+    <div class="column">
+        <p>Collected Authors</p>
+        <ul>
+            <% Author.all.each do |author| %>
+                <li>
+                    <p><a href=<%="/authors/#{author.id}" %>><%= author.name %></a></p>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+    <div class="column">
+        <p>Collected Books</p>
+        <ul>
+            <% Book.all.each do |book| %>
+                <li>
+                    <p><a href=<%="/books/#{book.id}" %>><%= book.title %></a></p>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>
 
 <a href="/repository/new">Create New Entry</a><br>
 
